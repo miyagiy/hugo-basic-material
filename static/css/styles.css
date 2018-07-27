@@ -1,4 +1,44 @@
+:root {
+  --primary-color: #00BCD4;
+  --light-primary-color: #B2EBF2;
+  --dark-primary-color: #0097A7;
+  --secondary-color: #CDDC39;
+  --light-secondary-color: #F0F4C3;
+  --dark-secondary-color: #AFB42B;
+
+  --background-color: #FFFFFF;
+  --surface-color: #FFFFFF;
+  --error-color: #B00020;
+
+  --on-primary-color: #000000;
+  --on-secondary-color: #000000;
+  --on-background-color: #000000;
+  --on-surface-color: #000000;
+  --on-error-color: #000000;
+}
+
 html {
   font-size: 18px;
-  background-color: rgba(255,255,255,.0);
+  background-color: var(--background-color);
+  color: var(--on-background-color);
+}
+
+.md-surface {
+  background-color: var(--surface-color);
+  color: var(--on-surface-color);
+}
+
+.md-primary {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color)
+}
+
+.md-secondary {
+  background-color: var(--secondary-color);
+  color: var(--on-secondary-color);
+}
+
+.md-error {
+  background-color: var(--error-color);
+  color: var(--on-error-color);
 }
