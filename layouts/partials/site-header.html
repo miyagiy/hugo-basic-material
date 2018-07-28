@@ -1,14 +1,16 @@
 {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-<header>
-  <nav class="pv3 ph3 ph4-ns" role="navigation">
-    <a href="{{ .Site.BaseURL }}">
-      {{ .Site.Title }}
-    </a>
+<header class="site-header md-primary elevation-4">
+  <nav role="navigation ">
+    <div class="site-title">
+      <a href="{{ .Site.BaseURL }}">
+        {{- .Site.Title -}}
+      </a>
+    </div>
     {{ if .Site.Menus.main }}
-    <ul>
+    <ul class="site-menu" >
       {{ range .Site.Menus.main }}
       <li>
-        <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }} page">
+        <a href="{{ .URL }}" title="{{ .Name }} page">
           {{ .Name }}
         </a>
       </li>
