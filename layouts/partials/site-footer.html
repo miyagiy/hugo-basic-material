@@ -1,5 +1,10 @@
-<footer>
-  <a href="{{ .Site.BaseURL }}" >
-    &copy; {{ now.Format "2006" }} {{ .Site.Title }}
-  </a>
+<footer class="site-footer md-primary elevation-4">
+  <div>
+    <a href="{{ .Site.BaseURL }}" >
+      &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+    </a>
+  </div>
+  <aside>
+    <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+  </aside>
 </footer>

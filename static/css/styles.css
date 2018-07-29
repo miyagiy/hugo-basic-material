@@ -18,7 +18,7 @@
   --on-surface-color: #000000;
   --on-error-color: #FFFFFF;
 
-  --primary-shadow-color: #004E51;
+  --primary-shadow-color: #004E5180;
 }
 
 html {
@@ -72,7 +72,7 @@ a {
 }
 
 .elevation-4 {
-  box-shadow: 0 0 16px 4px var(--primary-shadow-color);
+  box-shadow: 0 2px 4px 4px var(--primary-shadow-color);
 }
 
 .site-header {
@@ -100,4 +100,19 @@ a {
 
 .site-menu li:not(:last-child) {
   margin-right: 16px;
+}
+
+.site-footer {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.site-footer > aside > p {
+  font-size: 14px;
+  margin-top: 18px
+}
+
+.site-footer > aside > p > a {
+  text-decoration: underline;
 }
