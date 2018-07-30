@@ -1,12 +1,12 @@
 :root {
   /* material colors define */
-  /* primary cyan, secondary lime */
+  /* primary cyan, secondary light green */
   --primary-color: #00BCD4;
   --light-primary-color: #B2EBF2;
   --dark-primary-color: #0097A7;
-  --secondary-color: #CDDC39;
-  --light-secondary-color: #F0F4C3;
-  --dark-secondary-color: #AFB42B;
+  --secondary-color: #8BC34A;
+  --light-secondary-color: #C5E1A5;
+  --dark-secondary-color: #689F38;
 
   --background-color: #FFFFFF;
   --surface-color: #FFFFFF;
