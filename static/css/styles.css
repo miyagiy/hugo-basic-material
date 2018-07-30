@@ -116,3 +116,11 @@ a {
 .site-footer > aside > p > a {
   text-decoration: underline;
 }
+
+#content  a {
+  color: var(--secondary-color);
+}
+
+#content  a:visited {
+  color: var(--dark-secondary-color);
+}
