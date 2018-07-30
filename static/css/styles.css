@@ -19,7 +19,7 @@
   --on-error-color: #FFFFFF;
 
   --primary-shadow-color: #004E5180;
-  --surface-shadow-color: #00000080;
+  --surface-shadow-color: #00000040;
 }
 
 html {
@@ -68,13 +68,18 @@ a {
   color: var(--on-secondary-color);
 }
 
+.md-surface {
+  background-color: var(--surface-color);
+  color: var(--on-surface-color);
+}
+
 .md-error {
   background-color: var(--error-color);
   color: var(--on-error-color);
 }
 
 .elevation {
-  box-shadow: 0 2px 4px 4px var(--surface-shadow-color);
+  box-shadow: 0 1px 2px 2px var(--surface-shadow-color);
 }
 
 .md-primary.elevation {
@@ -123,10 +128,28 @@ a {
   text-decoration: underline;
 }
 
-#content  a {
+.content a {
   color: var(--secondary-color);
 }
 
-#content  a:visited {
+.content a:visited {
   color: var(--dark-secondary-color);
+}
+
+.list {
+  margin-top: 16px;
+}
+
+.list-item {
+  margin: 32px 24px;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.md-surface a {
+  color: var(--on-surface-color);
+}
+
+.md-surface a:visited {
+  color: var(--on-surface-color);
 }

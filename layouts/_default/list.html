@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article>
+<div class="list">
   <main>
     {{- .Content -}}
   </main>
@@ -9,5 +9,5 @@
     {{ end }}
   </section>
   {{- template "_internal/pagination.html" . -}}
-</article>
+</div>
 {{ end }}
