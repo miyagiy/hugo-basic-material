@@ -5,7 +5,7 @@
   </main>
   <section>
     {{ range .Paginator.Pages }}
-    {{ partial "list_item.html" . }}
+    {{ partial "list-item.html" . }}
     {{ end }}
   </section>
   {{- template "_internal/pagination.html" . -}}
