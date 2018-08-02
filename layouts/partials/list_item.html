@@ -1,11 +1,10 @@
 <article class="list-item md-surface elevation">
   <a href="{{ .URL }}">
-    <span>{{ humanize .Section }}</span>
-    <h1>{{ .Title }}</h1>
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
       {{- .Date.Format "January 2, 2006" -}}
     </time>
-    <div>
+    <h1>{{ .Title }}</h1>
+    <div class="summary">
       {{ .Summary }}
     </div>
   </a>
