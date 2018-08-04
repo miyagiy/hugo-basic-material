@@ -127,7 +127,7 @@ a {
 
 .content {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   padding: 36px;
 }
 
@@ -156,4 +156,29 @@ a {
 .list-item time {
   font-size: 16px;
   color: var(--on-surface-light-color);
+}
+
+.pagination {
+  margin: 128px 32px 256px 0;
+  display: flex;
+}
+
+.pagination li {
+  margin: 0 4px;
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+}
+
+.pagination li > a {
+  padding: 12px;
+  border: solid 1px var(--secondary-color);
+  border-radius: 2px;
+}
+
+li.active > a,
+li.active > a:visited {
+  background-color: var(--secondary-color);
+  color: var(--on-secondary-color);
+  pointer-events: none;
 }
