@@ -94,7 +94,7 @@ a {
 }
 
 .site-title {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .site-menu {
@@ -103,6 +103,7 @@ a {
 }
 
 .site-menu li {
+  font-size: 16px;
   display: inline;
 }
 
