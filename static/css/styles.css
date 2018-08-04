@@ -140,18 +140,23 @@ a {
   color: var(--dark-secondary-color);
 }
 
-.list-item {
-  margin-bottom: 32px;
-  padding: 32px;
-  border-radius: 4px;
-}
-
 .md-surface a {
   color: var(--on-surface-color);
 }
 
 .md-surface a:visited {
   color: var(--on-surface-color);
+}
+
+.list-item {
+  margin-bottom: 32px;
+  padding: 32px;
+  border-radius: 4px;
+  transition-duration: .2s;
+}
+
+.list-item.elevation:hover {
+  box-shadow: 0 2px 6px 3px var(--surface-shadow-color);
 }
 
 .list-item time {
