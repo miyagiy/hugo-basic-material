@@ -42,6 +42,28 @@ a {
   text-decoration: none;
 }
 
+time {
+  font-size: 16px;
+  color: var(--on-surface-light-color);
+}
+
+pre {
+  background-color: var(--dark-primary-color);
+  color: var(--on-primary-color);
+  overflow: auto;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 16px;
+}
+
+blockquote {
+  color: var(--on-surface-light-color);
+  font-size: 16px;
+  margin: 0;
+  padding: 0 16px;
+  border-left: solid 4px var(--light-primary-color);
+}
+
 .md-surface {
   background-color: var(--surface-color);
   color: var(--on-surface-color);
@@ -158,11 +180,6 @@ a {
 
 .list-item.elevation:hover {
   box-shadow: 0 2px 6px 3px var(--surface-shadow-color);
-}
-
-.list-item time {
-  font-size: 16px;
-  color: var(--on-surface-light-color);
 }
 
 .pagination {
