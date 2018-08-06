@@ -34,10 +34,6 @@ body {
   color: var(--on-background-color);
 }
 
-ul {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -136,13 +132,15 @@ blockquote {
 .site-footer {
   font-size: 16px;
   padding: 8px 32px;
+  margin-top: 256px;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
 .site-footer > aside > p {
   font-size: 14px;
-  margin-left: 24px
+  margin-left: 24px;
 }
 
 .site-footer > aside > p > a {
@@ -183,7 +181,7 @@ blockquote {
 }
 
 .pagination {
-  margin: 128px 32px 256px 0;
+  margin: 128px 32px 0 0;
   display: flex;
 }
 
@@ -205,4 +203,12 @@ li.active > a:visited {
   background-color: var(--secondary-color);
   color: var(--on-secondary-color);
   pointer-events: none;
+}
+
+.single-header {
+  margin-bottom: 72px;
+}
+
+.single-header > h1 {
+  font-size: 36px;
 }
