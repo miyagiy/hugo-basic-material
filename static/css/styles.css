@@ -107,9 +107,14 @@ blockquote {
   color: var(--on-dark-primary-color);
   box-shadow: var(--primary-shadow);
   z-index: 10;
+  transition: 0.5s;
 }
 
-.site-header > nav {
+.site-header.site-header-hidden {
+  margin-top: -5rem;
+}
+
+.site-navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -123,9 +128,9 @@ blockquote {
 }
 
 .site-menu {
+  font-size: 0.8rem;
   margin : 0.6rem 0 0 2rem;
   padding: 0;
-  font-size: 0.8rem;
 }
 
 .site-menu li {
