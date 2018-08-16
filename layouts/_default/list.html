@@ -3,8 +3,8 @@
   <main>
     {{- .Content -}}
   </main>
-  <div class="primary-background"></div>
-  <section>
+  <div class="list-primary-background"></div>
+  <section class="list-section">
     {{ range .Paginator.Pages }}
     {{ partial "list-item.html" . }}
     {{ end }}

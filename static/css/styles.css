@@ -41,12 +41,13 @@
   --surface-shadow: 0 1px 2px 2px var(--surface-shadow-color);
   --surface-hover-shadow: 0 2px 8px 3px var(--surface-shadow-color);
   --content-max-width: 45rem;
-  --primary-header-min-height: 12rem;
+  --single-header-min-height: 20rem;
 }
 
 
 html {
   font-size: var(--base-font-size);
+  line-height: 1.9;
 }
 
 body {
@@ -58,6 +59,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
+  margin-top: 3rem;
 }
 
 a {
@@ -99,10 +101,10 @@ blockquote {
 }
 
 .site-header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   background-color: var(--dark-primary-color);
   color: var(--on-dark-primary-color);
-  padding: 0 2rem 1rem 2rem;
   box-shadow: var(--primary-shadow);
   z-index: 10;
 }
@@ -112,6 +114,7 @@ blockquote {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
+  padding: 0 2rem 1rem 2rem;
 }
 
 .site-title {
@@ -165,19 +168,19 @@ blockquote {
 }
 
 
-.list .primary-background {
+.list-primary-background {
   position: absolute;
   width: 100%;
-  height: var(--primary-header-min-height);
+  height: var(--single-header-min-height);
   background-color: var(--primary-color);
 }
 
-.list section {
+.list-section {
   position: relative;
   padding: 0rem 2rem;
   max-width: var(--content-max-width);
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 10rem;
 }
 
 .list-item a,
@@ -198,6 +201,9 @@ blockquote {
   box-shadow: var(--surface-hover-shadow);
 }
 
+.list-item-title {
+  margin: 1rem 0;
+}
 
 .pagination {
   max-width: var(--content-max-width);
@@ -213,7 +219,7 @@ blockquote {
 }
 
 .pagination li > a {
-  transition: 0.3s;
+  transition: 0.2s;
   padding: 0.7rem 0.8rem;
   border-radius: 2px;
 }
@@ -234,14 +240,14 @@ li.active > a:visited {
 
 .single-header-container {
   background-color: var(--primary-color);
-  min-height: var(--primary-header-min-height);
+  min-height: var(--single-header-min-height);
   overflow: hidden;
 }
 
 .single-header {
   max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem 2rem;
 }
 
 .single-header > h1 {
