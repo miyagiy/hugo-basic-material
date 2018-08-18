@@ -1,9 +1,14 @@
 {{ define "main" }}
 <div class="main list">
-  <main>
-    {{- .Content -}}
-  </main>
-  <div class="list-primary-background"></div>
+  <div class="list-header-container">
+    <header class="list-header">
+      <h1>{{.Title}}</h1>
+      <span class="posts-count">{{ len .Pages }} posts</span>
+    </header>
+    <main class="list-content">
+      {{- .Content -}}
+    </main>
+  </div>
   <section class="list-section">
     {{ range .Paginator.Pages }}
     {{ partial "list-item.html" . }}
