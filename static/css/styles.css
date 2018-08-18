@@ -37,7 +37,8 @@
 
 
   --primary-shadow: 0 2px 4px 2px var(--primary-shadow-color);
-  --secondary-shadow: 0 2px 8px 2px var(--secondary-shadow-color);
+  --secondary-shadow: 0 1px 2px 2px var(--secondary-shadow-color);
+  --secondary-hover-shadow: 0 2px 8px 2px var(--secondary-shadow-color);
   --surface-shadow: 0 1px 2px 2px var(--surface-shadow-color);
   --surface-hover-shadow: 0 2px 8px 3px var(--surface-shadow-color);
   --content-max-width: 45rem;
@@ -222,7 +223,6 @@ blockquote {
 .pagination {
   max-width: var(--content-max-width);
   margin: 8rem auto 0 auto;
-  display: flex;
 }
 
 .pagination li {
@@ -232,7 +232,7 @@ blockquote {
   font-weight: bold;
 }
 
-.pagination li > a {
+.pagination li a {
   transition: 0.2s;
   padding: 0.7rem 0.8rem;
   border-radius: 2px;
@@ -243,7 +243,7 @@ li.active > a,
 li.active > a:visited {
   background-color: var(--secondary-color);
   color: var(--on-secondary-color);
-  box-shadow: var(--secondary-shadow);
+  box-shadow: var(--secondary-hover-shadow);
 }
 
 li.active > a,
@@ -278,4 +278,30 @@ li.active > a:visited {
   max-width: var(--content-max-width);
   margin: 5rem auto 0 auto;
   padding: 0 2rem;
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  padding: 0;
+}
+
+.tags a {
+  font-size: 0.8rem;
+  margin: 0 1rem 1rem 0;
+  padding: 0.3rem 0.8rem;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.tags a:visited {
+  color: var(--secondary-color);
+}
+
+.tags a:hover {
+  box-shadow: var(--secondary-hover-shadow);
 }
