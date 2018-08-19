@@ -1,6 +1,6 @@
 <dev class="tags">
   {{ range .Params.tags }}
-  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+  <a class="term" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
     {{- . -}}
   </a>
   {{ end }}

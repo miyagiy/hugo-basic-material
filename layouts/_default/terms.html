@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="main terms">
+  <div class="list-header-container">
+    <header class="list-header">
+      <h1>{{.Title}}</h1>
+      <span class="posts-count">{{ len .Pages }} {{ .Data.Plural }}</span>
+    </header>
+    <main class="list-content"></main>
+  </div>
+  <section class="terms-section">
+    {{ $data := .Data }}
+    {{ range $key, $value := .Data.Terms }}
+    <a class="term" href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $key | urlize }}">
+      {{- $key }} <span class="term-posts">({{ len $value -}})<span>
+    </a>
+    {{ end }}
+  </section>
+</div>
+{{ end }}
