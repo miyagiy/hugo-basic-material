@@ -294,6 +294,11 @@ li.active > a:visited {
   color: var(--light-primary-color);
 }
 
+.single-header .author {
+  color: var(--light-primary-color);
+  margin-left: 2rem;
+}
+
 
 .toc {
   font-size: 0.9rem;
