@@ -292,6 +292,28 @@ li.active > a:visited {
   color: var(--light-primary-color);
 }
 
+
+.toc {
+  font-size: 0.9rem;
+  background-color: var(--surface-color);
+  max-width: var(--content-max-width);
+  margin: 1rem auto 0 auto;
+  padding: 0 2rem;
+}
+
+.toc ul {
+  list-style: none;
+}
+
+.toc nav>ul {
+  padding: .5rem 1rem;
+}
+
+.toc ul li:before {
+  content: "・ ";
+  color: var(--secondary-color);
+}
+
 .single-main {
   background-color: var(--surface-color);
   max-width: var(--content-max-width);

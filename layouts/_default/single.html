@@ -9,12 +9,14 @@
     </header>
   </div>
 
+  {{- partial "table-of-content.html" . -}}
+
   <main class="single-main">
     {{- .Content -}}
     {{- partial "tags.html" . -}}
   </main>
   <aside>
-    {{- partial "menu-contextual.html" . -}}
+    {{- partial "related.html" . -}}
   </aside>
   <div class="disqus">
     {{ template "_internal/disqus.html" . }}
