@@ -5,18 +5,14 @@
 </div>
 {{- end -}}
 
-{{ $related := .Site.RegularPages.Related . | first 10 }}
+{{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-<div>
-  <p>Related</p>
-  <ul>
+<div class="related">
+  <h3>See Also</h3>
+  <div class="related-list">
     {{ range . }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        {{- .Title -}}
-      </a>
-    </li>
+    {{ .Render "li" }}
     {{ end }}
-  </ul>
+  </div>
 </div>
 {{ end }}

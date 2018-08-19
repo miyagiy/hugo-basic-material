@@ -11,7 +11,7 @@
   </div>
   <section class="list-section">
     {{ range .Paginator.Pages }}
-    {{ .Render "li" }}
+    {{ .Render "li-sm" }}
     {{ end }}
   </section>
   {{- template "_internal/pagination.html" . -}}

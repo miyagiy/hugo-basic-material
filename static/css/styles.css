@@ -218,12 +218,12 @@ blockquote {
   padding: 3rem 2rem 2rem 2rem;
 }
 
-.list-item a,
-.list-item a:visited {
+.li-sm a,
+.li-sm a:visited {
   color: var(--base-text-color);
 }
 
-.list-item {
+.li-sm {
   background-color: var(--surface-color);
   box-shadow: var(--surface-shadow);
   margin-bottom: 3rem;
@@ -232,11 +232,11 @@ blockquote {
   transition-duration: 0.15s;
 }
 
-.list-item:hover {
+.li-sm:hover {
   box-shadow: var(--surface-hover-shadow);
 }
 
-.list-item-title {
+.li-sm-title {
   margin: 1rem 0;
 }
 
@@ -323,4 +323,47 @@ li.active > a:visited {
 
 .tags a:hover {
   box-shadow: var(--secondary-hover-shadow);
+}
+
+
+.related {
+  max-width: var(--content-max-width);
+  margin: 5rem auto 0 auto;
+  padding: 0 2rem;
+}
+
+.related h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.related-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: : space-around;
+  padding: 0;
+}
+
+.li {
+  width: 16rem;
+  max-width: 16rem;
+  border-radius: 2px;
+  margin: 1rem 2rem 1rem 0;
+  padding: 0.5rem 1rem 1rem 1rem;
+  box-shadow: var(--surface-shadow);
+  transition: 0.3s;
+}
+
+.li:hover {
+  box-shadow: var(--surface-hover-shadow);
+}
+
+.li time {
+  font-size: 0.7rem;
+  color: var(--light-text-color);
+}
+
+.li-title {
+  color: var(--base-text-color);
+  margin: 0;
 }
