@@ -6,7 +6,9 @@
 
   {{ partial "site-favicon.html" . }}
 
-  <link rel="stylesheet" href="{{ relURL "css/styles.css" }}">
+  <style type="text/css">
+    {{ replaceRE " +" " " (replaceRE "\n|(/.+/)" "" (partial "styles.css" .)) | safeCSS }}
+  </style>
   <script type="text/javascript" src="{{ relURL "js/scripts.js" }}"></script>
 </head>
 <body>
