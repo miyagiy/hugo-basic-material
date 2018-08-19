@@ -12,14 +12,13 @@
   <main class="single-main">
     {{- .Content -}}
     {{- partial "tags.html" . -}}
-    <div>
-      {{ template "_internal/disqus.html" . }}
-    </div>
   </main>
-  
   <aside>
     {{- partial "menu-contextual.html" . -}}
   </aside>
+  <div class="disqus">
+    {{ template "_internal/disqus.html" . }}
+  </div>
 
 </article>
 {{ end }}
