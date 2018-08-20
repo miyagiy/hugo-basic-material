@@ -125,19 +125,20 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 0 2rem 1rem 2rem;
+  align-items: center;
+  min-height: 3.236rem;
+  padding: 0 2rem;
 }
 
 .site-title {
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-right: 2rem;
 }
 
 .site-menu {
   font-size: 0.8rem;
-  margin : 0.6rem 0 0 2rem;
   padding: 0;
+  margin: 0.5rem 0;
 }
 
 .site-menu li {
@@ -150,23 +151,28 @@ blockquote {
 
 
 .site-footer {
-  background-color: var(--dark-primary-color);
-  color: var(--on-dark-primary-color);
-  font-size: 0.9rem;
-  padding: 0.5rem 2rem;
-  margin-top: 8rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
+  padding: 0rem 2rem;
+  margin-top: 8rem;
+  min-height: 3.236rem;
+  background-color: var(--dark-primary-color);
+  color: var(--on-dark-primary-color);
   box-shadow: var(--site-header-footer-shadow);
 }
 
-.site-footer > aside > p {
-  font-size: 0.8rem;
-  margin-left: 1.5rem;
+.site-footer-copyright {
+  font-size: 0.9rem;
+  margin-right: 1.5rem;
 }
 
-.site-footer > aside > p > a {
+.site-footer-hugo {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.site-footer-hugo > a {
   text-decoration: underline;
 }
 
@@ -249,7 +255,7 @@ blockquote {
 }
 
 .pagination li a {
-  transition: 0.2s;
+  transition: 0.1s;
   padding: 0.7rem 0.8rem;
   border-radius: 2px;
 }
