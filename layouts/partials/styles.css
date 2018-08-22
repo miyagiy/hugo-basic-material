@@ -34,7 +34,7 @@
   --surface-shadow-color: #00000040;
   --site-header-footer-shadow: 0 2px 4px 2px var(--surface-shadow-color);
   --surface-shadow: 0 1px 2px 2px var(--surface-shadow-color);
-  --surface-hover-shadow: 0 2px 8px 2px var(--surface-shadow-color);
+  --surface-hover-shadow: 0 2px 10px 3px var(--surface-shadow-color);
   --content-max-width: 40rem;
 }
 
@@ -192,8 +192,9 @@ blockquote {
 
 .list-header {
   margin: 0 auto;
-  padding: 3rem 2rem 0 2rem;
+  padding: 2rem;
   max-width: var(--content-max-width);
+  min-height: 8.360rem;
 }
 
 .list-content {
@@ -205,6 +206,7 @@ blockquote {
 .list-header h1 {
   color: var(--on-primary-color);
   font-size: 1.8rem;
+  margin-top: 4rem;
   margin-bottom: 0.4rem;
 }
 
@@ -217,12 +219,14 @@ blockquote {
   position: relative;
   max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 0.2rem 2rem 0.2rem;
 }
 
 .li-sm a,
-.li-sm a:visited {
+.li-sm a:visited,
+.li-sm a:hover {
   color: var(--base-text-color);
+  text-decoration: none;
 }
 
 .li-sm {
@@ -232,6 +236,7 @@ blockquote {
   padding: 1.5rem 2rem;
   border-radius: 4px;
   transition-duration: 0.15s;
+  min-height: 20.721rem;
 }
 
 .li-sm:hover {
@@ -275,12 +280,11 @@ li.active > a:visited {
 
 .single-header-container {
   background-color: var(--primary-color);
-  /*min-height: 20rem;*/
+  min-height: 24.721rem;
 }
 
 .single-header {
   max-width: var(--content-max-width);
-  min-height: 20.721rem;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -288,7 +292,7 @@ li.active > a:visited {
 .single-header > h1 {
   color: var(--on-primary-color);
   font-size: 2rem;
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 .single-header > time {
@@ -337,30 +341,37 @@ li.active > a:visited {
 }
 
 .related h3 {
-  color: var(--secondary-color);
+  color: var(--base-text-color);
   margin: 5rem 0 0 0;
 }
 
 .li {
   border-radius: 2px;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   padding: 0 1rem;
 }
 
 .li time {
+  display: block;
   font-size: 0.7rem;
   color: var(--light-text-color);
 }
 
 .li-title {
+  display: inline-block;
   color: var(--light-text-color);
   margin: 0 1rem;
 }
 
+.li a:hover .li-title {
+  color: var(--secondary-color);
+}
+
+
 .tags {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 6rem;
+  margin-top: 3rem;
   padding: 0;
 }
 
