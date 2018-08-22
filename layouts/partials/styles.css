@@ -275,18 +275,20 @@ li.active > a:visited {
 
 .single-header-container {
   background-color: var(--primary-color);
-  min-height: 20rem;
+  /*min-height: 20rem;*/
 }
 
 .single-header {
   max-width: var(--content-max-width);
+  min-height: 20.721rem;
   margin: 0 auto;
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 2rem;
 }
 
 .single-header > h1 {
   color: var(--on-primary-color);
   font-size: 2rem;
+  margin-top: 7rem;
 }
 
 .single-header > time {
