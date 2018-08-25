@@ -185,6 +185,10 @@ blockquote {
   color: var(--dark-secondary-color);
 }
 
+.main a:hover {
+  text-decoration: underline;
+}
+
 
 .list-header-container {
   background-color: var(--primary-color);
@@ -374,7 +378,7 @@ li.active > a:visited {
   margin-top: 3rem;
   padding: 0;
 }
-
+a.term:visited,
 .term {
   font-size: 0.8rem;
   margin: 0 1rem 1rem 0;
@@ -385,12 +389,12 @@ li.active > a:visited {
   transition: 0.2s;
 }
 
-.term:visited {
-  color: var(--secondary-color);
-}
-
+a.term:hover,
 .term:hover {
-  box-shadow: var(--surface-hover-shadow);
+  color: var(--on-secondary-color);
+  background-color: var(--dark-secondary-color);
+  border-color: var(--dark-secondary-color);
+  text-decoration: none;
 }
 
 .terms-section {
