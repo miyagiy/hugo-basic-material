@@ -133,7 +133,7 @@ blockquote {
   margin-right: 2rem;
 }
 .site-menu {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 0;
   margin: 0.5rem 0;
 }
@@ -157,11 +157,11 @@ blockquote {
   box-shadow: var(--site-header-footer-shadow);
 }
 .site-footer-copyright {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin-right: 1.5rem;
 }
 .site-footer-hugo {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 .site-footer-hugo > a {
@@ -185,13 +185,13 @@ blockquote {
 }
 .list-header {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   max-width: var(--content-max-width);
   min-height: 8.360rem;
 }
 .list-content {
   margin: 0 auto;
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 1rem 1rem 1rem;
   max-width: var(--content-max-width);
 }
 .list-header h1 {
@@ -218,7 +218,7 @@ blockquote {
 }
 .li-sm {
   margin: 0 auto 3rem auto;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   background-color: var(--surface-color);
   box-shadow: var(--surface-shadow);
   border-radius: 4px;
@@ -272,7 +272,7 @@ li.active > a:visited {
 }
 .single-header {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   max-width: var(--content-max-width);
 }
 .single-header > h1 {
@@ -292,7 +292,7 @@ li.active > a:visited {
 .toc {
   font-size: 0.9rem;
   margin: 2rem auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   max-width: var(--content-max-width);
 }
 .toc ul {
@@ -319,14 +319,14 @@ li.active > a:visited {
 
 .single-main {
   margin: 0 auto;
-  padding: 2rem 2rem 7rem 2rem;
+  padding: 2rem 1rem 7rem 1rem;
   max-width: var(--content-max-width);
 }
 
 
 .related {
   margin: 0rem auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   max-width: var(--content-max-width);
 }
 .related h3 {
@@ -340,7 +340,7 @@ li.active > a:visited {
 }
 .li time {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--light-text-color);
 }
 .li-title {
@@ -361,7 +361,7 @@ li.active > a:visited {
 }
 a.term:visited,
 .term {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0 1rem 1rem 0;
   padding: 0.1rem 0.4rem;
   color: var(--secondary-color);
@@ -387,7 +387,7 @@ a.term:hover,
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   color: var(--base-text-color);
   max-width: var(--content-max-width);
 }

@@ -21,11 +21,11 @@ function transitionHeader(y, lastScrollY) {
     const siteHeader = getElement(document, "site-header");
     const diffY = y - lastScrollY;
 
-    if (0 > diffY) { // up
+    if (-10 > diffY) { // up
         if (!siteHeader.classList.contains(shownClassName)) {
             siteHeader.classList.replace(hiddenClassName, shownClassName);
         }
-    } else if (diffY > 0) { // down
+    } else if (diffY > 10) { // down
         if (!siteHeader.classList.contains(hiddenClassName)) {
             siteHeader.classList.replace(shownClassName, hiddenClassName);
         }

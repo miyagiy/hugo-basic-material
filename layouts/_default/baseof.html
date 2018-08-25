@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
 <head>
+  <title>{{- block "title" . }}{{ .Site.Title }}{{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
   <meta charset="utf-8">
-  <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+
+  {{ if .Description }}<meta name="description" content="{{ .Description }}">
+  {{ else if .IsPage }}<meta name="description" content="{{ .Summary }}">{{ end }}
 
   {{ partial "site-favicon.html" . }}
 
