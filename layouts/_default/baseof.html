@@ -6,10 +6,7 @@
 
   {{ partial "site-favicon.html" . }}
 
-  <style type="text/css">
-    {{ replaceRE " +" " " (replaceRE "\n|(/.+/)" "" (partial "styles.css" .)) | safeCSS }}
-  </style>
-  <script type="text/javascript" src="{{ relURL "js/scripts.js" }}"></script>
+  <style type="text/css">{{ replaceRE " +" " " (replaceRE "\n|(/.+/)" "" (partial "styles.css" .)) | safeCSS }}</style>
 </head>
 <body>
   {{- partial "site-header.html" . -}}
@@ -19,3 +16,7 @@
   {{- partial "site-footer.html" . -}}
 </body>
 </html>
+
+<script type="text/javascript">
+  {{ replaceRE " +" " " (replaceRE "\n|(//.+)" "" (partial "scripts.js" .)) | safeJS }}
+</script>

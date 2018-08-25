@@ -1,14 +1,14 @@
-window.addEventListener("scroll", onScroll)
+window.addEventListener("scroll", onScroll);
 
 
 var lastScrollY = 0;
 
 function getElement(element, className) {
-    return element.getElementsByClassName(className)[0]
+    return element.getElementsByClassName(className)[0];
 }
 
 function onScroll() {
-    const y = window.scrollY
+    const y = window.scrollY;
 
     transitionHeader(y, lastScrollY);
 
@@ -21,7 +21,7 @@ function transitionHeader(y, lastScrollY) {
     const siteHeader = getElement(document, "site-header");
     const diffY = y - lastScrollY;
 
-    if (diffY < 0) { // up
+    if (0 > diffY) { // up
         if (!siteHeader.classList.contains(shownClassName)) {
             siteHeader.classList.replace(hiddenClassName, shownClassName);
         }
