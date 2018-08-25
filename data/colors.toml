@@ -1,0 +1,96 @@
+
+[Red]
+light = "#EF9A9A"
+main = "#F44336"
+dark = "#D32F2F"
+
+[Pink]
+light = "#F48FB1"
+main = "#E91E63"
+dark = "#C2185B"
+
+[Purple]
+light = "#CE93D8"
+main = "#9C27B0"
+dark = "#7B1FA2"
+
+[DeepPurple]
+light = "#B39DDB"
+main = "#673AB7"
+dark = "#512DA8"
+
+[Indigo]
+light = "#9FA8DA"
+main = "#3F51B5"
+dark = "#303F9F"
+
+[Blue]
+light = "#90CAF9"
+main = "#2196F3"
+dark = "#1976D2"
+
+[LightBlue]
+light = "#81D4FA"
+main = "#03A9F4"
+dark = "#0288D1"
+
+[Cyan]
+light = "#80DEEA"
+main = "#00BCD4"
+dark = "#0097A7"
+
+[Teal]
+light = "#80CBC4"
+main = "#009688"
+dark = "#00796B"
+
+[Green]
+light = "#A5D6A7"
+main = "#4CAF50"
+dark = "#388E3C"
+
+[LightGreen]
+light = "#C5E1A5"
+main = "#8BC34A"
+dark = "#689F38"
+
+[Lime]
+light = "#E6EE9C"
+main = "#CDDC39"
+dark = "#AFB42B"
+
+[Yellow]
+light = "#FFF59D"
+main = "#FFEB3B"
+dark = "#FBC02D"
+
+[Amber]
+light = "#FFE082"
+main = "#FFC107"
+dark = "#FFA000"
+
+[Orange]
+light = "#FFCC80"
+main = "#FF9800"
+dark = "#F57C00"
+
+[DeepOrange]
+light = "#FFAB91"
+main = "#FF5722"
+dark = "#E64A19"
+
+[Brown]
+light = "#BCAAA4"
+main = "#795548"
+dark = "#5D4037"
+
+[Gray]
+light = "#EEEEEE"
+main = "#9E9E9E"
+dark = "#616161"
+
+[BlueGray]
+light = "#B0BEC5"
+main = "#607D8B"
+dark = "#455A64"
+

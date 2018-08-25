@@ -1,0 +1,32 @@
+
+
+
+[params]
+primaryColorTheme = "Cyan"
+secondaryColorTheme = "Lime"
+
+surfaceColor = "#FAFAFA"
+backgroundColor = "#EEEEEE"
+
+onPrimaryColor = "#FFFFFF"
+onLightPrimaryColor = "#616161"
+onDarkPrimaryColor = "#FFFFFF"
+
+onSecondaryColor = "#FFFFFF"
+onLightSecondaryColor = "#FFFFFF"
+onDarkSecondaryColor = "#FFFFFF"
+
+baseTextColor = "#616161"
+lightTextColor = "#757575"
+darkTextColor = "#424242"
+
+
+# primary color detail setting
+# primaryColor = "#8BC34A"
+# lightPrimaryColor = "#DCEDC8"
+# darkPrimaryColor = "#689F38"
+
+# secondary color detail setting
+# secondaryColor = "#FFC107"
+# lightSecondaryColor = "#FFECB3"
+# darkSecondaryColor = "#FFA000"

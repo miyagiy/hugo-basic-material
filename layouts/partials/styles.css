@@ -1,34 +1,37 @@
 :root {
   --base-font-size: 18px;
-  /* material colors define */
 
-  /* primary color: cyan */
-  --primary-color: {{ with $.Param "primaryColor" }}{{.}}{{else}} #00BCD4 {{end}};
-  --light-primary-color: {{ with $.Param "lightPrimaryColor" }}{{.}}{{else}} #B2EBF2 {{end}};
-  --dark-primary-color: {{ with $.Param "darkPrimaryColor" }}{{.}}{{else}} #0097A7 {{end}};
+  /* material colors define */
+  /* primary color */
+  {{ $primary :=  index $.Site.Data.colors ($.Param "primaryColorTheme") }}
+  --primary-color: {{ with $.Param "primaryColor" }}{{.}}{{else}}{{ $primary.main }}{{end}};
+  --light-primary-color: {{ with $.Param "lightPrimaryColor" }}{{.}}{{else}}{{ $primary.light }}{{end}};
+  --dark-primary-color: {{ with $.Param "darkPrimaryColor" }}{{.}}{{else}}{{ $primary.dark }}{{end}};
 
   /* secondary color: light green */
-  --secondary-color: {{ with $.Param "secondaryColor" }}{{.}}{{else}} #8BC34A {{end}};
-  --light-secondary-color: {{ with $.Param "lightSecondaryColor" }}{{.}}{{else}} #C5E1A5 {{end}};
-  --dark-secondary-color: {{ with $.Param "darkSecondaryColor" }}{{.}}{{else}} #689F38 {{end}};
+  {{ $primary :=  index $.Site.Data.colors ($.Param "secondaryColorTheme") }}
+  --secondary-color: {{ with $.Param "secondaryColor" }}{{.}}{{else}}{{ $primary.main }}{{end}};
+  --light-secondary-color: {{ with $.Param "lightSecondaryColor" }}{{.}}{{else}}{{ $primary.light }}{{end}};
+  --dark-secondary-color: {{ with $.Param "darkSecondaryColor" }}{{.}}{{else}}{{ $primary.dark }}{{end}};
 
-  /* surface color: gray50 */
-  --surface-color: {{ with $.Param "surfaceColor" }}{{.}}{{else}} #FAFAFA {{end}};
+  /* surface and background color */
+  --surface-color: {{ $.Param "surfaceColor" }};
+  --background-color: {{ $.Param "backgroundColor" }};
 
   /* text color on primary color */
-  --on-primary-color: {{ with $.Param "onPrimaryColor" }}{{.}}{{else}} #FFFFFF {{end}};
-  --on-light-primary-color: {{ with $.Param "onLightPrimaryColor" }}{{.}}{{else}} #616161 {{end}};
-  --on-dark-primary-color: {{ with $.Param "onDarkPrimaryColor" }}{{.}}{{else}} #FFFFFF {{end}};
+  --on-primary-color: {{ $.Param "onPrimaryColor" }};
+  --on-light-primary-color: {{ $.Param "onLightPrimaryColor" }};
+  --on-dark-primary-color: {{ $.Param "onDarkPrimaryColor" }};
 
   /* text color on seconary color */
-  --on-secondary-color: {{ with $.Param "onSecondaryColor" }}{{.}}{{else}} #FFFFFF {{end}};
-  --on-light-secondary-color: {{ with $.Param "onLightSecondaryColor" }}{{.}}{{else}} #FFFFFF {{end}};
-  --on-dark-secondary-color: {{ with $.Param "onDarkSecondaryColor" }}{{.}}{{else}} #FFFFFF {{end}};
+  --on-secondary-color: {{ $.Param "onSecondaryColor" }};
+  --on-light-secondary-color: {{ $.Param "onLightSecondaryColor" }};
+  --on-dark-secondary-color: {{ $.Param "onDarkSecondaryColor" }};
 
   /* text color on surface color */
-  --base-text-color: {{ with $.Param "baseTextColor" }}{{.}}{{else}} #616161 {{end}};
-  --light-text-color: {{ with $.Param "lightTextColor" }}{{.}}{{else}} #757575 {{end}};
-  --dark-text-color: {{ with $.Param "darkTextColor" }}{{.}}{{else}} #424242 {{end}};
+  --base-text-color: {{ $.Param "baseTextColor" }};
+  --light-text-color: {{ $.Param "lightTextColor" }};
+  --dark-text-color: {{ $.Param "darkTextColor" }};
 
 
   --surface-shadow-color: #00000040;
@@ -49,7 +52,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: var(--surface-color);
+  background-color: var(--background-color);
   color: var(--base-text-color);
 }
 
@@ -282,9 +285,8 @@ li.active > a:visited {
 
 .toc {
   font-size: 0.9rem;
-  background-color: var(--surface-color);
   max-width: var(--content-max-width);
-  margin: 1rem auto 0 auto;
+  margin: 2rem auto;
   padding: 0 2rem;
 }
 .toc ul {
@@ -306,8 +308,8 @@ li.active > a:visited {
 .single-main {
   background-color: var(--surface-color);
   max-width: var(--content-max-width);
-  margin: 5rem auto 0 auto;
-  padding: 0 2rem;
+  margin: 3rem auto 0 auto ;
+  padding: 2rem 2rem 7rem 2rem;
 }
 
 
@@ -368,9 +370,10 @@ a.term:hover,
 .terms-section {
   display: flex;
   flex-wrap: wrap;
-  margin: 6rem auto 0 auto;
-  padding: 0 2rem;
+  margin: 3rem auto 0 auto;
+  padding: 3rem 2rem;
   color: var(--base-text-color);
+  background-color: var(--surface-color);
   max-width: var(--content-max-width);
 }
 .terms-section a.term-sm {
