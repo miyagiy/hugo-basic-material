@@ -2,8 +2,8 @@
 
 
 [params]
-primaryColorTheme = "Cyan"
-secondaryColorTheme = "Lime"
+primaryColorTheme = "LightBlue"
+secondaryColorTheme = "Amber"
 
 surfaceColor = "#FAFAFA"
 backgroundColor = "#EEEEEE"
@@ -16,9 +16,9 @@ onSecondaryColor = "#FFFFFF"
 onLightSecondaryColor = "#FFFFFF"
 onDarkSecondaryColor = "#FFFFFF"
 
-baseTextColor = "#616161"
-lightTextColor = "#757575"
-darkTextColor = "#424242"
+baseTextColor = "#757575"
+lightTextColor = "#9E9E9E"
+darkTextColor = "#616161"
 
 
 # primary color detail setting
