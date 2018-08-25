@@ -111,8 +111,8 @@ blockquote {
 .site-header {
   position: fixed;
   width: 100%;
-  background-color: var(--dark-primary-color);
   color: var(--on-dark-primary-color);
+  background-color: var(--dark-primary-color);
   box-shadow: var(--site-header-footer-shadow);
   z-index: 10;
   transition: 0.5s;
@@ -125,8 +125,8 @@ blockquote {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-height: 3.236rem;
   padding: 0 2rem;
+  min-height: 3.236rem;
 }
 .site-title {
   font-size: 1rem;
@@ -152,8 +152,8 @@ blockquote {
   padding: 0rem 2rem;
   margin-top: 8rem;
   min-height: 3.236rem;
-  background-color: var(--dark-primary-color);
   color: var(--on-dark-primary-color);
+  background-color: var(--dark-primary-color);
   box-shadow: var(--site-header-footer-shadow);
 }
 .site-footer-copyright {
@@ -195,20 +195,20 @@ blockquote {
   max-width: var(--content-max-width);
 }
 .list-header h1 {
-  color: var(--on-primary-color);
   font-size: 1.8rem;
   margin-top: 4rem;
   margin-bottom: 0.4rem;
+  color: var(--on-primary-color);
 }
 .posts-count {
-  color: var(--light-primary-color);
   font-size: 0.9rem;
+  color: var(--light-primary-color);
 }
 .list-section {
   position: relative;
-  max-width: var(--content-max-width);
   margin: 0 auto;
   padding: 3rem 0.2rem 2rem 0.2rem;
+  max-width: 52rem;
 }
 .li-sm a,
 .li-sm a:visited,
@@ -217,13 +217,18 @@ blockquote {
   text-decoration: none;
 }
 .li-sm {
+  margin: 0 auto 3rem auto;
+  padding: 3rem 2rem;
   background-color: var(--surface-color);
   box-shadow: var(--surface-shadow);
-  margin-bottom: 3rem;
-  padding: 1.5rem 2rem;
   border-radius: 4px;
+  box-sizing: border-box;
   transition-duration: 0.15s;
-  min-height: 20.721rem;
+}
+.li-sm a {
+  display: block;
+  margin: 0 auto;
+  max-width: var(--content-max-width);
 }
 .li-sm:hover {
   box-shadow: var(--surface-hover-shadow);
@@ -234,8 +239,8 @@ blockquote {
 
 
 .pagination {
-  max-width: var(--content-max-width);
   margin: 0 auto;
+  max-width: var(--content-max-width);
 }
 .pagination li {
   position: relative;
@@ -244,15 +249,15 @@ blockquote {
   font-weight: bold;
 }
 .pagination li a {
-  transition: 0.1s;
   padding: 0.7rem 0.8rem;
   border-radius: 2px;
+  transition: 0.1s;
 }
 .pagination li > a:hover,
 li.active > a,
 li.active > a:visited {
-  background-color: var(--secondary-color);
   color: var(--on-secondary-color);
+  background-color: var(--secondary-color);
   text-decoration: none;
 }
 li.active > a,
@@ -262,25 +267,25 @@ li.active > a:visited {
 
 
 .single-header-container {
-  background-color: var(--primary-color);
   min-height: 24.721rem;
+  background-color: var(--primary-color);
 }
 .single-header {
-  max-width: var(--content-max-width);
   margin: 0 auto;
   padding: 2rem;
+  max-width: var(--content-max-width);
 }
 .single-header > h1 {
-  color: var(--on-primary-color);
   font-size: 2rem;
   margin-top: 8rem;
+  color: var(--on-primary-color);
 }
 .single-header > time {
   color: var(--light-primary-color);
 }
 .single-header .author {
-  color: var(--light-primary-color);
   margin-left: 2rem;
+  color: var(--light-primary-color);
 }
 
 
@@ -329,9 +334,9 @@ li.active > a:visited {
   margin: 5rem 0 0 0;
 }
 .li {
-  border-radius: 2px;
   margin: 1rem 0;
   padding: 0 1rem;
+  border-radius: 2px;
 }
 .li time {
   display: block;
@@ -340,8 +345,8 @@ li.active > a:visited {
 }
 .li-title {
   display: inline-block;
-  color: var(--light-text-color);
   margin: 0 1rem;
+  color: var(--light-text-color);
 }
 .li a:hover .li-title {
   color: var(--secondary-color);
@@ -375,9 +380,9 @@ a.term:hover,
 
 .terms-section-container {
   max-width: 52rem;
-  box-sizing: border-box;
   margin: 3rem auto 0 auto;
   background-color: var(--surface-color);
+  box-sizing: border-box;
 }
 .terms-section {
   display: flex;
@@ -411,8 +416,8 @@ a:hover.term-posts {
   position: relative;
   padding-top: 8rem;
   height: 100%;
-  max-width: var(--content-max-width);
   margin: 0 auto;
+  max-width: var(--content-max-width);
 }
 
 .not-found h1 {
