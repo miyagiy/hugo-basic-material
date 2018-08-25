@@ -330,7 +330,7 @@ li.active > a:visited {
   max-width: var(--content-max-width);
 }
 .related h3 {
-  color: var(--base-text-color);
+  color: var(--dark-text-color);
   margin: 5rem 0 0 0;
 }
 .li {
@@ -346,7 +346,7 @@ li.active > a:visited {
 .li-title {
   display: inline-block;
   margin: 0 1rem;
-  color: var(--light-text-color);
+  color: var(--base-text-color);
 }
 .li a:hover .li-title {
   color: var(--secondary-color);
