@@ -7,13 +7,16 @@
     </header>
     <main class="list-content"></main>
   </div>
-  <section class="terms-section">
-    {{ $data := .Data }}
-    {{ range $key, $value := .Data.Terms }}
-    <a class="term-sm" href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $key | urlize }}">
-      {{- $key }} <span class="term-posts">({{ len $value -}})<span>
-    </a>
-    {{ end }}
-  </section>
+  <div class="terms-section-container">
+    <section class="terms-section">
+      {{ $data := .Data }}
+      {{ range $key, $value := .Data.Terms }}
+      <a class="term-sm" href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $key | urlize }}">
+        {{- $key }} <span class="term-posts">({{ len $value -}})<span>
+        </a>
+        {{ end }}
+      </section>
+    </div>
+  </div>
 </div>
 {{ end }}

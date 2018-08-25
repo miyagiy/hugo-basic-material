@@ -253,6 +253,7 @@ li.active > a,
 li.active > a:visited {
   background-color: var(--secondary-color);
   color: var(--on-secondary-color);
+  text-decoration: none;
 }
 li.active > a,
 li.active > a:visited {
@@ -372,13 +373,18 @@ a.term:hover,
 }
 
 
+.terms-section-container {
+  max-width: 52rem;
+  box-sizing: border-box;
+  margin: 3rem auto 0 auto;
+  background-color: var(--surface-color);
+}
 .terms-section {
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem auto 0 auto;
+  margin: 0 auto;
   padding: 3rem 2rem;
   color: var(--base-text-color);
-  background-color: var(--surface-color);
   max-width: var(--content-max-width);
 }
 .terms-section a.term-sm {
