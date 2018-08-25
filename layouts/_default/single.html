@@ -11,10 +11,12 @@
 
   {{- partial "table-of-content.html" . -}}
 
-  <main class="single-main">
-    {{- .Content -}}
-    {{- partial "tags.html" . -}}
-  </main>
+  <div class="single-main-container">
+    <main class="single-main">
+      {{- .Content -}}
+      {{- partial "tags.html" . -}}
+    </main>
+  </div>
   <aside>
     {{- partial "related.html" . -}}
   </aside>

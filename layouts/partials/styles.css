@@ -36,8 +36,8 @@
 
   --surface-shadow-color: #00000040;
   --site-header-footer-shadow: 0 2px 4px 2px var(--surface-shadow-color);
-  --surface-shadow: 0 1px 2px 2px var(--surface-shadow-color);
-  --surface-hover-shadow: 0 2px 10px 3px var(--surface-shadow-color);
+  --surface-shadow: 0 1px 2px 1px var(--surface-shadow-color);
+  --surface-hover-shadow: 0 2px 16px 1px var(--surface-shadow-color);
   --content-max-width: 40rem;
 }
 
@@ -285,9 +285,9 @@ li.active > a:visited {
 
 .toc {
   font-size: 0.9rem;
-  max-width: var(--content-max-width);
   margin: 2rem auto;
   padding: 0 2rem;
+  max-width: var(--content-max-width);
 }
 .toc ul {
   list-style: none;
@@ -304,19 +304,24 @@ li.active > a:visited {
   padding-left: 1.5rem;
 }
 
+.single-main-container {
+  margin: 3rem auto 0 auto;
+  max-width: 52rem;
+  background-color: var(--surface-color);
+  box-shadow: 0 0 12px -2px var(--surface-shadow-color);
+}
 
 .single-main {
-  background-color: var(--surface-color);
-  max-width: var(--content-max-width);
-  margin: 3rem auto 0 auto ;
+  margin: 0 auto;
   padding: 2rem 2rem 7rem 2rem;
+  max-width: var(--content-max-width);
 }
 
 
 .related {
-  max-width: var(--content-max-width);
   margin: 0rem auto;
   padding: 0 2rem;
+  max-width: var(--content-max-width);
 }
 .related h3 {
   color: var(--base-text-color);
