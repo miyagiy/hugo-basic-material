@@ -369,26 +369,25 @@ a.term:hover,
   display: flex;
   flex-wrap: wrap;
   margin: 6rem auto 0 auto;
-  max-width: var(--content-max-width);
   padding: 0 2rem;
+  color: var(--base-text-color);
+  max-width: var(--content-max-width);
 }
-
-.terms-section .term {
+.terms-section a.term-sm {
   font-size: 1.2rem;
   margin: 0 2rem 2rem 0;
   padding: 0.4rem 0.9rem;
   font-weight: bold;
-  border-color: var(--surface-color);
-  border-radius: 5px;
+  color: var(--base-text-color);
+  min-width: 40%;
 }
-
-.terms-section .term:hover {
-  border-color: var(--secondary-color);
+.terms-section a:hover.term-sm,
+a:hover.term-posts {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
-
 .term-posts {
   font-size: 0.9rem;
-  color: var(--secondary-color);
 }
 
 
