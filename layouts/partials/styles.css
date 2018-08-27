@@ -416,6 +416,31 @@ a:hover.term-posts {
 
 
 
+
+/* styles for mobile */
+@media (max-width:420px) {
+  .site-navigation {
+    padding: 0 0.5rem;
+  }
+  .site-menu {
+    display: none;
+  }
+  .site-footer {
+    padding: 1rem;
+  }
+  .pagination {
+    padding-left: 0;
+  }
+  .pagination li {
+    margin: 0 0.1rem;
+  }
+  .pagination li a {
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+
+
 /* 404 not found. */
 .not-found {
   position: relative;
