@@ -273,6 +273,7 @@ li.active > a:visited {
 .single-header-container {
   min-height: 24.721rem;
   background-color: var(--primary-color);
+  box-shadow: var(--surface-shadow);
 }
 .single-header {
   margin: 0 auto;
@@ -319,6 +320,7 @@ li.active > a:visited {
   max-width: 52rem;
   background-color: var(--surface-color);
   box-shadow: 0 0 12px -2px var(--surface-shadow-color);
+  border-radius: 2px;
 }
 
 .single-main {
