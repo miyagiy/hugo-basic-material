@@ -65,6 +65,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 2rem;
+}
+
 time {
   font-size: 0.9rem;
   color: var(--light-text-color);
