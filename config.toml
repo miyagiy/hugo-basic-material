@@ -20,6 +20,8 @@ baseTextColor = "#757575"
 lightTextColor = "#9E9E9E"
 darkTextColor = "#616161"
 
+shadowColor = "#00000040"
+
 
 # primary color detail setting
 # primaryColor = "#8BC34A"
