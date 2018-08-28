@@ -6,7 +6,7 @@ primaryColorTheme = "LightBlue"
 secondaryColorTheme = "Amber"
 
 surfaceColor = "#FAFAFA"
-backgroundColor = "#EEEEEE"
+backgroundColor = "#F5F5F5"
 
 onPrimaryColor = "#FFFFFF"
 onLightPrimaryColor = "#616161"
