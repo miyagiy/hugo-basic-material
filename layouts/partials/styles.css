@@ -327,7 +327,7 @@ li.active > a:visited {
 
 .single-main {
   margin: 0 auto;
-  padding: 2rem 1rem 7rem 1rem;
+  padding: 2rem 1rem 5rem 1rem;
   max-width: var(--content-max-width);
 }
 
@@ -337,23 +337,23 @@ li.active > a:visited {
   padding: 0 1rem;
   max-width: var(--content-max-width);
 }
-.related h3 {
+.related h2 {
   color: var(--dark-text-color);
-  margin: 5rem 0 0 0;
+  margin: 4rem 0 0 0;
 }
 .li {
   margin: 1rem 0;
-  padding: 0 1rem;
+  padding: 0;
   border-radius: 2px;
 }
 .li time {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--light-text-color);
 }
 .li-title {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0;
   color: var(--base-text-color);
 }
 .li a:hover .li-title {
