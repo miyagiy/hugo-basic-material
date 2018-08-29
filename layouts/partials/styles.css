@@ -389,6 +389,7 @@ a.term:hover,
   max-width: 52rem;
   margin: 3rem auto 0 auto;
   background-color: var(--surface-color);
+  box-shadow: 0 0 12px -2px var(--shadow-color);
   box-sizing: border-box;
 }
 .terms-section {
@@ -438,6 +439,15 @@ a:hover.term-posts {
   }
   .pagination li a {
     padding: 0.3rem 0.5rem;
+  }
+  .li-sm {
+    padding: 1rem 1rem;
+  }
+  .li-sm h1 {
+    margin: 0.5rem 0;
+  }
+  .terms-section a.term-sm {
+    margin-bottom: 0.5rem;
   }
 }
 
