@@ -36,9 +36,10 @@
   /* css box-shadow color */
   --shadow-color: {{ $.Param "shadowColor" }};
 
-  --site-header-footer-shadow: 0 2px 4px 2px var(--shadow-color);
-  --surface-shadow: 0 1px 2px 1px var(--shadow-color);
-  --surface-hover-shadow: 0 2px 16px 1px var(--shadow-color);
+  --low-elevation-shadow: 0 2px 4px 1px var(--shadow-color);
+  --middle-elevation-shadow: 0 2px 4px 2px var(--shadow-color);
+  --high-elevation-shadow: 0 5px 16px 3px var(--shadow-color);
+
   --content-max-width: 40rem;
 }
 
@@ -49,6 +50,7 @@ html {
   height: 100%;
 }
 
+/* Let body be background */
 body {
   margin: 0;
   padding: 0;
@@ -56,8 +58,18 @@ body {
   background-color: var(--background-color);
   color: var(--base-text-color);
 }
-
-h1, h2, h3, h4, h5, h6 {
+body a {
+  color: var(--light-primary-color);
+}
+body a:hover {
+  color: var(--on-primary-color);
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   color: var(--primary-color);
   margin-top: 3rem;
 }
@@ -72,7 +84,6 @@ ul {
 
 time {
   font-size: 0.9rem;
-  color: var(--light-text-color);
 }
 
 code {
@@ -105,20 +116,63 @@ blockquote {
 }
 
 
-.site-header a,
-.site-footer a {
+
+.primary-background {
+  background-color: var(--primary-color);
   color: var(--light-primary-color);
 }
-.site-header a:hover,
-.site-footer a:hover {
+.primary-background a {
+  color: var(--light-primary-color);
+}
+.primary-background a:hover {
+  color: var(--on-primary-color);
+}
+.primary-background h1,
+.primary-background h2,
+.primary-background h3,
+.primary-background h4,
+.primary-background h5,
+.primary-background h6 {
+  color: var(--on-primary-color);
+}
+
+.dark-primary-background {
+  background-color: var(--dark-primary-color);
   color: var(--on-dark-primary-color);
 }
+.dark-primary-background a {
+  color: var(--light-primary-color);
+}
+.dark-primary-background a:hover {
+  color: var(--on-dark-primary-color);
+}
+
+.surface {
+  background-color: var(--surface-color);
+  color: var(--base-color);
+}
+
+.low-elevation {
+  box-shadow: var(--low-elevation-shadow);
+}
+.middle-elevation {
+  box-shadow: var(--middle-elevation-shadow);
+}
+.high-elevation {
+  box-shadow: var(--high-elevation-shadow);
+}
+
+.card {
+  background-color: var(--surface-color);
+  color: var(--base-color);
+  box-shadow: var(--low-elevation-shadow);
+  border-radius: 2px;
+}
+
+
 .site-header {
   position: fixed;
   width: 100%;
-  color: var(--on-dark-primary-color);
-  background-color: var(--dark-primary-color);
-  box-shadow: var(--site-header-footer-shadow);
   z-index: 10;
   transition: 0.5s;
 }
@@ -157,9 +211,6 @@ blockquote {
   padding: 0rem 2rem;
   margin-top: 8rem;
   min-height: 3.236rem;
-  color: var(--on-dark-primary-color);
-  background-color: var(--dark-primary-color);
-  box-shadow: var(--site-header-footer-shadow);
 }
 .site-footer-copyright {
   font-size: 0.8rem;
@@ -187,7 +238,6 @@ blockquote {
 
 .list-header-container {
   background-color: var(--primary-color);
-  box-shadow: var(--surface-shadow);
 }
 .list-header {
   margin: 0 auto;
@@ -204,11 +254,9 @@ blockquote {
   font-size: 1.8rem;
   margin-top: 4rem;
   margin-bottom: 0.4rem;
-  color: var(--on-primary-color);
 }
 .posts-count {
   font-size: 0.9rem;
-  color: var(--light-primary-color);
 }
 .list-section {
   position: relative;
@@ -225,11 +273,8 @@ blockquote {
 .li-sm {
   margin: 0 auto 3rem auto;
   padding: 3rem 1rem;
-  background-color: var(--surface-color);
-  box-shadow: var(--surface-shadow);
-  border-radius: 4px;
   box-sizing: border-box;
-  transition-duration: 0.15s;
+  transition-duration: 0.2s;
 }
 .li-sm a {
   display: block;
@@ -237,7 +282,7 @@ blockquote {
   max-width: var(--content-max-width);
 }
 .li-sm:hover {
-  box-shadow: var(--surface-hover-shadow);
+  box-shadow: var(--high-elevation-shadow);
 }
 .li-sm-title {
   margin: 1rem 0;
@@ -274,8 +319,6 @@ li.active > a:visited {
 
 .single-header-container {
   min-height: 24.721rem;
-  background-color: var(--primary-color);
-  box-shadow: var(--surface-shadow);
 }
 .single-header {
   margin: 0 auto;
@@ -285,14 +328,6 @@ li.active > a:visited {
 .single-header > h1 {
   font-size: 2rem;
   margin-top: 8rem;
-  color: var(--on-primary-color);
-}
-.single-header > time {
-  color: var(--light-primary-color);
-}
-.single-header .author {
-  margin-left: 2rem;
-  color: var(--light-primary-color);
 }
 
 
@@ -320,9 +355,6 @@ li.active > a:visited {
 .single-main-container {
   margin: 3rem auto 0 auto;
   max-width: 52rem;
-  background-color: var(--surface-color);
-  box-shadow: 0 0 12px -2px var(--shadow-color);
-  border-radius: 2px;
 }
 
 .single-main {
@@ -388,8 +420,6 @@ a.term:hover,
 .terms-section-container {
   max-width: 52rem;
   margin: 3rem auto 0 auto;
-  background-color: var(--surface-color);
-  box-shadow: 0 0 12px -2px var(--shadow-color);
   box-sizing: border-box;
 }
 .terms-section {
@@ -397,7 +427,6 @@ a.term:hover,
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 3rem 1rem;
-  color: var(--base-text-color);
   max-width: var(--content-max-width);
 }
 .terms-section a.term-sm {

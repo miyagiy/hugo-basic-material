@@ -1,17 +1,13 @@
-<header class="site-header site-header-shown">
+<header class="site-header site-header-shown dark-primary-background middle-elevation">
   <nav class="site-navigation" role="navigation">
-    <div class="site-title">
-      <a href="{{ .Site.BaseURL }}">
-        {{- .Site.Title -}}
-      </a>
-    </div>
+    <a class="site-title" href="{{ .Site.BaseURL }}">
+      {{- .Site.Title -}}
+    </a>
     {{ if .Site.Menus.main }}
     <ul class="site-menu" >
       {{ range .Site.Menus.main }}
       <li>
-        <a href="{{ .URL }}" title="{{ .Name }} page">
-          {{ .Name }}
-        </a>
+        <a href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{ end }}
     </ul>

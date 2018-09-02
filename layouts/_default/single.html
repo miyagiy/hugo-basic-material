@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="main article">
-  <div class="single-header-container">
+  <div class="single-header-container primary-background low-elevation">
     <header class="single-header">
       <h1>{{- .Title -}}</h1>
       <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
@@ -11,7 +11,7 @@
 
   {{- partial "table-of-content.html" . -}}
 
-  <div class="single-main-container">
+  <div class="single-main-container card">
     <main class="single-main">
       {{- .Content -}}
       {{- partial "tags.html" . -}}
