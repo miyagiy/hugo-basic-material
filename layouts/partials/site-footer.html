@@ -1,12 +1,12 @@
 <footer class="site-footer dark-primary-background middle-elevation">
   <div class="site-footer-copyright">
+    {{ with .Site.Copyright }}
+    {{- . -}}
+    {{else}}
     <a href="{{ .Site.BaseURL }}" >
-      {{ with .Site.Copyright }}
-      {{- . -}}
-      {{else}}
       &copy; {{ now.Format "2006" }} {{ .Site.Title -}}
-      {{end}}
     </a>
+    {{end}}
   </div>
   <aside>
     <p class="site-footer-hugo">Powered by <a href="https://gohugo.io/">Hugo</a>.</p>

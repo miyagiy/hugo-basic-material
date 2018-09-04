@@ -59,10 +59,11 @@ body {
   color: var(--base-text-color);
 }
 body a {
-  color: var(--light-primary-color);
+  color: var(--secondary-color);
 }
 body a:hover {
-  color: var(--on-primary-color);
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 body h1,
 body h2,
@@ -126,6 +127,7 @@ blockquote {
 }
 .primary-background a:hover {
   color: var(--on-primary-color);
+  text-decoration: none;
 }
 .primary-background h1,
 .primary-background h2,
@@ -145,6 +147,7 @@ blockquote {
 }
 .dark-primary-background a:hover {
   color: var(--on-dark-primary-color);
+  text-decoration: none;
 }
 
 .surface {
@@ -225,17 +228,6 @@ blockquote {
 }
 
 
-.main a {
-  color: var(--secondary-color);
-}
-.main a:visited {
-  color: var(--dark-secondary-color);
-}
-.main a:hover {
-  text-decoration: underline;
-}
-
-
 .list-header-container {
   background-color: var(--primary-color);
 }
@@ -262,19 +254,19 @@ blockquote {
   position: relative;
   margin: 0 auto;
   padding: 3rem 0.2rem 2rem 0.2rem;
-  max-width: 52rem;
-}
-.li-sm a,
-.li-sm a:visited,
-.li-sm a:hover {
-  color: var(--base-text-color);
-  text-decoration: none;
+  max-width: 48rem;
 }
 .li-sm {
   margin: 0 auto 3rem auto;
   padding: 3rem 1rem;
   box-sizing: border-box;
   transition-duration: 0.2s;
+}
+.li-sm a,
+.li-sm a:visited,
+.li-sm a:hover {
+  color: var(--base-text-color);
+  text-decoration: none;
 }
 .li-sm a {
   display: block;
@@ -344,13 +336,9 @@ li.active > a:visited {
 .toc ul {
   list-style: none;
 }
-.toc nav>ul {
+.toc nav > ul {
   margin-top: 2rem;
   padding: 0;
-}
-.toc ul li:before {
-  content: "・ ";
-  color: var(--secondary-color);
 }
 .toc ul ul {
   padding-left: 1.5rem;
