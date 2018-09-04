@@ -292,21 +292,25 @@ blockquote {
 .pagination {
   margin: 0 auto;
   max-width: var(--content-max-width);
+  padding: 1rem 0;
 }
 .pagination li {
-  position: relative;
   display: inline-block;
-  margin: 0 0.3rem;
+  margin: 0 0.1rem;
   font-weight: bold;
 }
 .pagination li a {
-  padding: 0.7rem 0.8rem;
-  border-radius: 2px;
-  transition: 0.1s;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.2s;
 }
-.pagination li > a:hover,
-li.active > a,
-li.active > a:visited {
+.pagination li a:hover,
+li.active a,
+li.active a:visited {
   color: var(--on-secondary-color);
   background-color: var(--secondary-color);
   text-decoration: none;
@@ -460,14 +464,10 @@ a:hover.term-posts {
   .site-footer {
     padding: 1rem;
   }
-  .pagination {
-    padding-left: 0;
-  }
-  .pagination li {
-    margin: 0 0.1rem;
-  }
   .pagination li a {
-    padding: 0.3rem 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
   }
   .li-sm {
     padding: 1rem 1rem;
