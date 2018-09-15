@@ -286,12 +286,15 @@ blockquote {
   max-width: var(--content-max-width);
   padding: 1rem 0;
 }
-.pagination li {
+.page-item {
   display: inline-block;
   margin: 0 0.1rem;
   font-weight: bold;
 }
-.pagination li a {
+.page-item.disabled {
+  display: none;
+}
+.page-link {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
@@ -300,15 +303,15 @@ blockquote {
   border-radius: 50%;
   transition: 0.2s;
 }
-.pagination li a:hover,
-li.active a,
-li.active a:visited {
+.page-link:hover,
+.page-item.active .page-link,
+.page-item.active .page-link:visited {
   color: var(--on-secondary-color);
   background-color: var(--secondary-color);
   text-decoration: none;
 }
-li.active > a,
-li.active > a:visited {
+.page-item.active > .page-link,
+.page-item.active > .page-link:visited {
   pointer-events: none;
 }
 
