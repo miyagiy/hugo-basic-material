@@ -314,6 +314,26 @@ blockquote {
 .page-item.active > .page-link:visited {
   pointer-events: none;
 }
+.page-item span {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  vertical-align: middle;
+}
+.pagination-svg {
+  width: 1rem;
+  height: 1rem;
+}
+.pagination-icon {
+  stroke: var(--secondary-color);
+  stroke-width: 110;
+  stroke-opacity: 1;
+  fill-opacity: 0;
+  opacity: 1;
+}
+.page-link:hover .pagination-icon {
+  stroke: var(--on-secondary-color);
+}
 
 
 .single-header-container {
