@@ -3,7 +3,7 @@
 <ul class="pagination">
   {{ with $pag.First }}
   <li class="page-item{{ if not $pag.HasPrev }} disabled{{ end }}">
-    <a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M309.39 522.58L147.97 320L309.39 117.42" id="bNQvc2hdQ"></path><path class="pagination-icon" d="M494.65 522.58L333.23 320L494.65 117.42" id="k4uHInhQH4"></path></defs><use xlink:href="#bNQvc2hdQ"/><use xlink:href="#k4uHInhQH4"/></svg></span></a>
+    <a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M309.39 522.58L147.97 320L309.39 117.42 M494.65 522.58L333.23 320L494.65 117.42" id="bNQvc2hdQ"></path></defs><use xlink:href="#bNQvc2hdQ"/></svg></span></a>
   </li>
   {{ end }}
   <li class="page-item{{ if not $pag.HasPrev }} disabled{{ end }}">
@@ -32,7 +32,7 @@
   </li>
   {{ with $pag.Last }}
   <li class="page-item{{ if not $pag.HasNext }} disabled{{ end }}">
-    <a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M333.23 522.58L494.65 320L333.23 117.42" id="eB3AP04Fo"></path><path class="pagination-icon" d="M147.97 522.58L309.39 320L147.97 117.42" id="a5N9cKzSU"></path></defs><use xlink:href="#eB3AP04Fo"/><use xlink:href="#a5N9cKzSU"/></svg></span></a>
+    <a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M333.23 522.58L494.65 320L333.23 117.42 M147.97 522.58L309.39 320L147.97 117.42" id="eB3AP04Fo"></path></defs><use xlink:href="#eB3AP04Fo"/></svg></span></a>
   </li>
   {{ end }}
 </ul>

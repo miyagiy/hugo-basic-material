@@ -315,9 +315,6 @@ blockquote {
   pointer-events: none;
 }
 .page-item span {
-  display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
   vertical-align: middle;
 }
 .pagination-svg {
