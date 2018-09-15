@@ -5,7 +5,11 @@
     </time>
     <h1 class="li-sm-title">{{ .Title }}</h1>
     <div class="li-sm-summary">
+      {{ if .Description }}
+      {{ .Description }}
+      {{ else }}
       {{ .Summary }}
+      {{ end }}
     </div>
   </a>
 </article>
