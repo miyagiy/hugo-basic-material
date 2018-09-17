@@ -1,0 +1,22 @@
+<div class="overlay overlay-hidden"></div>
+
+
+<section class="overlay-section overlay-section-hidden">
+  {{ if .Site.Menus.main }}
+  <h3 class="overlay-title">Menu</h3>
+  <ul class="overlay-menu" >
+    {{ range .Site.Menus.main }}
+    <li class="overlay-menu-item">
+      <a class="overlay-menu-link"href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+
+  {{- if .Params.toc -}}
+  <h3 class="overlay-title">Table of content</h3>
+  <div class="overlay-toc">
+    {{ .TableOfContents }}
+  </div>
+  {{- end -}}
+</section>

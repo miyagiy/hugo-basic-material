@@ -1,7 +1,12 @@
-window.addEventListener("scroll", onScroll);
-
 
 var lastScrollY = 0;
+
+function init() {
+    window.addEventListener("scroll", onScroll);
+
+    getElement(document, "menu-icon").addEventListener("click", openMenu);
+    getElement(document, "overlay").addEventListener("click", closeMenu);
+}
 
 function getElement(element, className) {
     return element.getElementsByClassName(className)[0];
@@ -31,3 +36,19 @@ function transitionHeader(y, lastScrollY) {
         }
     }
 }
+
+function openMenu() {
+    const overlay = getElement(document, "overlay");
+    const overlaySection = getElement(document, "overlay-section");
+    overlay.classList.replace("overlay-hidden", "overlay-shown");
+    overlaySection.classList.replace("overlay-section-hidden", "overlay-section-shown");
+}
+
+function closeMenu() {
+    const overlay = getElement(document, "overlay");
+    const overlaySection = getElement(document, "overlay-section");
+    overlay.classList.replace("overlay-shown", "overlay-hidden");
+    overlaySection.classList.replace("overlay-section-shown", "overlay-section-hidden");
+}
+
+init();
