@@ -3,11 +3,11 @@
 <ul class="pagination">
   {{ with $pag.First }}
   <li class="page-item{{ if not $pag.HasPrev }} disabled{{ end }}">
-    <a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M309.39 522.58L147.97 320L309.39 117.42 M494.65 522.58L333.23 320L494.65 117.42" id="bNQvc2hdQ"></path></defs><use xlink:href="#bNQvc2hdQ"/></svg></span></a>
+    <a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true"><svg class="pagination-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon-path" d="M309.39 522.58L147.97 320L309.39 117.42 M494.65 522.58L333.23 320L494.65 117.42" id="bNQvc2hdQ"></path></defs><use xlink:href="#bNQvc2hdQ"/></svg></span></a>
   </li>
   {{ end }}
   <li class="page-item{{ if not $pag.HasPrev }} disabled{{ end }}">
-    <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" class="page-link" aria-label="Previous"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M400.71 531.97L239.29 329.39L400.71 126.82" id="aKBHO76KK"></path></defs><use xlink:href="#aKBHO76KK"/></svg></span></a>
+    <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" class="page-link" aria-label="Previous"><span aria-hidden="true"><svg class="pagination-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon-path" d="M400.71 531.97L239.29 329.39L400.71 126.82" id="aKBHO76KK"></path></defs><use xlink:href="#aKBHO76KK"/></svg></span></a>
   </li>
   {{ $.Scratch.Set "__paginator.ellipsed" false }}
   {{ range $pag.Pagers }}
@@ -28,11 +28,11 @@
   {{ end }}
   {{ end }}
   <li class="page-item{{ if not $pag.HasNext }} disabled{{ end }}">
-    <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" class="page-link" aria-label="Next"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M239.29 531.97L400.71 329.39L239.29 126.82" id="ga8CpHYhp"></path></defs><use xlink:href="#ga8CpHYhp"/></svg></span></a>
+    <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" class="page-link" aria-label="Next"><span aria-hidden="true"><svg class="pagination-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon-path" d="M239.29 531.97L400.71 329.39L239.29 126.82" id="ga8CpHYhp"></path></defs><use xlink:href="#ga8CpHYhp"/></svg></span></a>
   </li>
   {{ with $pag.Last }}
   <li class="page-item{{ if not $pag.HasNext }} disabled{{ end }}">
-    <a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true"><svg class="pagination-svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon" d="M333.23 522.58L494.65 320L333.23 117.42 M147.97 522.58L309.39 320L147.97 117.42" id="eB3AP04Fo"></path></defs><use xlink:href="#eB3AP04Fo"/></svg></span></a>
+    <a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true"><svg class="pagination-icon" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path class="pagination-icon-path" d="M333.23 522.58L494.65 320L333.23 117.42 M147.97 522.58L309.39 320L147.97 117.42" id="eB3AP04Fo"></path></defs><use xlink:href="#eB3AP04Fo"/></svg></span></a>
   </li>
   {{ end }}
 </ul>

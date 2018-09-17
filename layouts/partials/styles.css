@@ -206,6 +206,15 @@ blockquote {
   margin-right: 1em;
 }
 
+.menu-icon {
+  display: none;
+}
+.menu-icon-path {
+  fill: var(--on-dark-primary-color);
+  opacity: 1;
+  fill-opacity: 1;
+}
+
 
 .site-footer {
   display: flex;
@@ -317,18 +326,18 @@ blockquote {
 .page-item span {
   vertical-align: middle;
 }
-.pagination-svg {
+.pagination-icon {
   width: 1rem;
   height: 1rem;
 }
-.pagination-icon {
+.pagination-icon-path {
   stroke: var(--secondary-color);
   stroke-width: 110;
   stroke-opacity: 1;
   fill-opacity: 0;
   opacity: 1;
 }
-.page-link:hover .pagination-icon {
+.page-link:hover .pagination-icon-path {
   stroke: var(--on-secondary-color);
 }
 
@@ -468,6 +477,9 @@ a:hover.term-posts {
   }
   .site-menu {
     display: none;
+  }
+  .menu-icon {
+    display: block;
   }
   .site-footer {
     padding: 1rem;
