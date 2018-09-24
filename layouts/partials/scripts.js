@@ -1,4 +1,3 @@
-
 var lastScrollY = 0;
 
 function init() {
@@ -6,6 +5,10 @@ function init() {
 
     getElement(document, "menu-icon").addEventListener("click", openMenu);
     getElement(document, "overlay").addEventListener("click", closeMenu);
+    Array.from(
+        document.querySelectorAll(".overlay-toc ul li a"),
+        e => e.addEventListener("click", closeMenu)
+    )
 }
 
 function getElement(element, className) {
