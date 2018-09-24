@@ -5,10 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
 
+  {{ $primary :=  index $.Site.Data.colors ($.Param "primaryColorTheme") }}
+  <meta name=”theme-color” content="{{ with $.Param "primaryColor" }}{{.}}{{else}}{{ $primary.main }}{{end}}">
+
   {{ if .Description }}<meta name="description" content="{{ .Description }}">
   {{ else if .IsPage }}<meta name="description" content="{{ .Summary }}">{{ end }}
 
-  {{ partial "site-favicon.html" . }}
+  <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/logo.png">
+  <link rel="canonical" href="{{ .Permalink }}">
 
   <style type="text/css">{{ replaceRE " +" " " (replaceRE "\n|(/.+/)" "" (partial "styles.css" .)) | safeCSS }}</style>
 </head>
