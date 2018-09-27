@@ -1,4 +1,4 @@
-# hugo-ym-material
+# hugo-basic-material
 hugo theme 
 
 # WIP
