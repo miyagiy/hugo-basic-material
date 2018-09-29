@@ -2,6 +2,8 @@
 
 
 [params]
+fontFamily = "Arial,'Helvetica Neue',sans-serif"
+
 primaryColorTheme = "LightBlue"
 secondaryColorTheme = "Amber"
 

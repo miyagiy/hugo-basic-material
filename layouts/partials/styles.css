@@ -1,6 +1,8 @@
 :root {
   --base-font-size: 18px;
 
+  --font-family: {{ $.Param "fontFamily" }};
+
   /* material colors define */
   /* primary color */
   {{ $primary :=  index $.Site.Data.colors ($.Param "primaryColorTheme") }}
@@ -45,6 +47,7 @@
 
 
 html {
+  font-family: var(--font-family);
   font-size: var(--base-font-size);
   line-height: 1.9;
   height: 100%;
