@@ -1,5 +1,5 @@
 :root {
-  --base-font-size: 18px;
+  --base-font-size: {{ $.Param "baseFontSize" }};
 
   --font-family: {{ $.Param "fontFamily" }};
 

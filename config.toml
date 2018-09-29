@@ -2,6 +2,8 @@
 
 
 [params]
+baseFontSize = "18px"
+
 fontFamily = "Arial,'Helvetica Neue',sans-serif"
 
 primaryColorTheme = "LightBlue"
