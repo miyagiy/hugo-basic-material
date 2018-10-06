@@ -6,6 +6,8 @@ baseFontSize = "18px"
 
 fontFamily = "Arial,'Helvetica Neue',sans-serif"
 
+dateFormat = "January 2, 2006"
+
 primaryColorTheme = "LightBlue"
 secondaryColorTheme = "Amber"
 

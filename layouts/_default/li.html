@@ -1,6 +1,6 @@
 <article class="li">
   <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-    {{- .Date.Format "January 2, 2006" -}}
+    {{- .Date.Format ($.Param "dateFormat") -}}
   </time>
   <a href="{{ .URL }}">
     <h1 class="li-title">{{ .Title }}</h1>
