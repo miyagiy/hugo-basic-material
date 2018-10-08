@@ -11,30 +11,37 @@ dateFormat = "January 2, 2006"
 primaryColorTheme = "LightBlue"
 secondaryColorTheme = "Amber"
 
+# background-color of card.
 surfaceColor = "#FAFAFA"
+
+# background-color of body.
 backgroundColor = "#F5F5F5"
 
+# Text and icon colors on the Primary color.
 onPrimaryColor = "#FFFFFF"
 onLightPrimaryColor = "#616161"
 onDarkPrimaryColor = "#FFFFFF"
 
+# Text and icon colors on the Secondary color.
 onSecondaryColor = "#FFFFFF"
 onLightSecondaryColor = "#FFFFFF"
 onDarkSecondaryColor = "#FFFFFF"
 
+# Text colors.
 baseTextColor = "#757575"
 lightTextColor = "#9E9E9E"
 darkTextColor = "#616161"
 
+# Shadow color of Header, Footer and Card.
 shadowColor = "#00000040"
 
 
-# primary color detail setting
+# Primary colors detail setting, these not set by default.(override primaryColorTheme's colors)
 # primaryColor = "#8BC34A"
 # lightPrimaryColor = "#DCEDC8"
 # darkPrimaryColor = "#689F38"
 
-# secondary color detail setting
+# Secondary colors detail setting, these not set by default.(override secondaryColorTheme's colors)
 # secondaryColor = "#FFC107"
 # lightSecondaryColor = "#FFECB3"
 # darkSecondaryColor = "#FFA000"
